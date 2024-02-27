@@ -1,0 +1,69 @@
+.style-switcher{
+    position: fixed;
+    right: 10px;
+    top:160px;
+    width: 240px;
+    border: 1px solid var(--bg-black-50);
+    background:var(--bg-black-100);
+    padding: 10px;
+    transition: all 0.3s ease;
+    z-index: 30;
+    
+}
+.transformed{
+    transform: translateX(100%);
+}
+.style-switcher .icon
+{
+    position: absolute;
+    border: 1px solid var(--bg-black-50);
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color:var(--bg-black-100) ;
+    right: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+    color:var(--text-black-700);
+}
+.style-switcher .icon i{
+    line-height: 40px;
+}
+.style-switcher .daynightmode{
+    top: 53px;
+    margin-top: 20px;
+}
+.style-switcher h4{
+    font-size: 20px;
+    color: var(--text-black-900);
+    text-align: center;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.colors span{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.style-switcher .color1{
+    background-color: #ec1839;
+}
+.style-switcher .color2{
+    background-color: #0d6ef5;
+}
+.style-switcher .color3{
+    background-color: #c20cf5;
+}
+.style-switcher .color4{
+    background-color: #16a909;
+}
+.style-switcher .color5{
+    background-color: #9a3c06;
+}
