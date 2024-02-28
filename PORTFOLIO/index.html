@@ -1,89 +1,443 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.8.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.8.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.8.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="app.css" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <link rel="stylesheet" href="./css/color1.css" class="alternate-style" title="color1" disabled/>
+  <link rel="stylesheet" href="./css/color2.css" class="alternate-style" title="color2" disabled/>
+  <link rel="stylesheet" href="./css/color3.css" class="alternate-style" title="color3" disabled/>
+  <link rel="stylesheet" href="./css/color4.css" class="alternate-style" title="color4" disabled/>
+  <link rel="stylesheet" href="./css/color5.css" class="alternate-style" title="color5" />
+  <link rel="stylesheet" href="./css/switchtheme.css"/>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="sidebar">
+      
+      <div class="logo">
+        <a href="#"><span class="Firstletter">MY Portfolio </span></a>
+      </div>
+      <ul class="list">
+        <li><a href="#home" class="home"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="#about" class="About"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="#service" class="Services"><i class="fa-solid fa-list"></i>Skills</a></li>
+        <li><a href="#portfolio" class="Portfolio"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact" class="Contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
+      </ul>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="maincontent">
+      <div class="togglebar"> <i class="fa-solid fa-bars"></i></div>
+      <div class="homesection section animate" id="home">
+        <div class="homecontent">
+          <div class="name">
+            Hello,my name is<span>Tinky Gorai</span>
+          </div>
+          <div class="profession">
+            I'm a <span class="typing"> Web Developer</span>
+          </div>
+          <div style="margin-top: 20px;">From Designing -> Development -> Deployment -> Maintenance, i can do all.
+            <br>
+            <br>
+            <ul class="skills-ul">
+              <li style="list-style: none;"><b>WEB DESIGNING</b> - Figma, UI&UX, Framer, Webflow, Canva, AI</li>
+              <li style="list-style: none;"><b>FRONTEND</b> - React JS, HTML, CSS, JavaScript</li>
+              <li style="list-style: none;"><b>BACKEND</b> - Django(Python)</li>
+              <li style="list-style: none;"><b>DATABASE</b> - MySQL, Postgre</li>
+              <li style="list-style: none;"><b>DEPLOYMENT</b> - AWS, Firebase</li>
+            </ul><br>
+          </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          <button class="btn">Hire me</button>
+        </div>
+        <div class="homeimg">
+          <img class="homeimgg" src="./img/DP.jpg" />
+        </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+      </div>
+
+      <div class="aboutsection section" id="about">
+        <h1 class="head">About Me</h1>
+        <div class="aboutcontent">
+          <h1>I'm Tinky Gorai and <span>Web developer</span></h1>
+          <p>Hello everyone,  Tinky Gorai from Jharkhand, India. I am pursuing Integrated Mtech Geological Technology  at IIT Roorkee. I love to create websites.</p>
+        </div>
+        <div class="roww">
+          <div class="personalinfo">
+            <div class="row">
+              <div class="col">
+                <div class="info">
+                  <span><b class="pad15">Birthday :</b>23rd sept 2003</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">Website:</b>www.portfolio.com</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">Degree :</b>Integrated Mtech</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">City :</b>Dhanbad</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info">
+                  <span><b class="pad15">Age :</b>19+</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">Email:</b>tinkygorai9@gmail.com</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">Phone :</b>7667605908</span>
+                </div>
+                <div class="info">
+                  <span><b class="pad15">Freelance :</b>Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button class="btn">Download CV</button>
+              <button class="btn">Hire me</button>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <h2>HTML</h2>
+              <div class="progressbar">
+                <div class="progress" style="width:90% ;"></div>
+                <span class="skillperc">90%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <h2>JS</h2>
+              <div class="progressbar">
+                <div class="progress" style="width:80% ;"></div>
+                <div class="skillperc">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <h2>React</h2>
+              <div class="progressbar">
+                <div class="progress" style="width:80% ;"></div>
+                <div class="skillperc">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <h2>Django</h2>
+              <div class="progressbar">
+                <div class="progress" style="width:70% ;"></div>
+                <div class="skillperc">70%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roww">
+          <div class="education">
+            <h1 class="title">Education</h1>
+            <div class="container">
+              <div class="items">
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2026
+                  </h2>
+                  <h4 class="itemtitle">
+                    Integrated Mtech Geological Technology
+                  </h4>
+                  <p class="itemcontent">
+                    Indian Institute of Technology Roorkee
+                    [CGPA:8.7]
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2018-2020
+                  </h2>
+                  <h4 class="itemtitle">
+                    Intermediate [JAC Board]
+                  </h4>
+                  <p class="itemcontent">
+                   K.S.G.M College Nirsa
+                   [CGPA:8.6]
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2018
+                  </h2>
+                  <h4 class="itemtitle">
+                    Matriculate[JAC Board]
+                  </h4>
+                  <p class="itemcontent">
+                    S.S.K.B.C High School
+                  
+                  [CGPA: 8.4]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="experience">
+            <h1 class="title">Experience</h1>
+            <div class="container">
+              <div class="items">
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2026
+                  </h2>
+                  <h4 class="itemtitle">
+                    Integrated Mtech
+                  </h4>
+                  <p class="itemcontent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi repellat inventore
+                    excepturi, aspernatur similique recusandae vero cum, laborum, cupiditate natus omnis fuga!
+                    Odio recusandae numquam quos porro soluta, possimus obcaecati velit iusto, molestiae eius similique!
+                    Et est natus similique?
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2026
+                  </h2>
+                  <h4 class="itemtitle">
+                    Integrated Mtech
+                  </h4>
+                  <p class="itemcontent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi repellat inventore
+                    excepturi, aspernatur similique recusandae vero cum, laborum, cupiditate natus omnis fuga!
+                    Odio recusandae numquam quos porro soluta, possimus obcaecati velit iusto, molestiae eius similique!
+                    Et est natus similique?
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="circledot"></div>
+                  <h2 class="itemdate">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021-2026
+                  </h2>
+                  <h4 class="itemtitle">
+                    Integrated Mtech
+                  </h4>
+                  <p class="itemcontent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi repellat inventore
+                    excepturi, aspernatur similique recusandae vero cum, laborum, cupiditate natus omnis fuga!
+                    Odio recusandae numquam quos porro soluta, possimus obcaecati velit iusto, molestiae eius similique!
+                    Et est natus similique?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+      <div class="servicesection section" id="service">
+        <h1 class="head">Skills</h1>
+        <div class="serviceitem">
+          <div class="item">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>UI/UX Design</h2>
+            <p>FIgma, Framer, UI&UX, Webflow</p>
+            
+          </div>
+          <div class="item">
+            <i class="fa-sharp fa-solid fa-mobile-screen"></i>
+            <h2>Frontent Development</h2>
+            <p>HTML, CSS, Javascript, ReactJS</p>
+           
+          </div>
+          
+          <div class="item">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Backend Development</h2>
+            <p>Django</p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Integration</h2>
+            <p>MySQL Database</p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-globe"></i>
+            <h2>Web Hosting</h2>
+            <p>Amazon Web Services(AWS),Firebase, Github Pages, Vercel</p>
+            
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Software Development</h2>
+            <p>DSA,Proficiency in C++ Language</p>
+            
+          </div>
+          <!-- <div class="item">
+            <i class="fa-brands fa-searchengin"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eligendi omnis ullam nihil est. Error, ab.</p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eligendi omnis ullam nihil est. Error, ab.</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="portfoliosection section" id="portfolio">
+        <h1 class="head">Portfolio</h1>
+        <div class="works">
+          <div class="work" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/Ecomsite1.png" width="200px" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/Ecomsite2.png" alt="Second slide">
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <div class="work" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/Fooddilevarysite1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/food_delivery2.png" alt="Second slide">
+              </div>
+              
+            </div>
+           
+          </div>
+          <div class="work" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/tdi1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/tdi2.png" alt="Second slide">
+              </div>
+              
+            </div>
+           
+          </div>
+
+
+        </div>
+      </div>
+      <div class="contactsection section" id="contact">
+        <h2 class="head">Contact Me</h2>
+        <div class="contactcontainer">
+          <h3 class="title">Have You Any Question</h3>
+          <h4 class="sub-title">I'm At Your Service</h4>
+          <div class="contactinfo">
+            <div class="contactitem">
+              <i class="fa-solid fa-phone"></i>
+              <h4>phone</h4>
+              <p>7667605908</p>
+            </div>
+            <div class="contactitem">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <h4>Linkedin</h4>
+              <a href="https://www.linkedin.com/in/tinky-gorai-385753237">View Profile</a>
+            </div>
+            <div class="contactitem">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>Email</h4>
+              <p>tinkygorai9@gmail.com</p>
+            </div>
+            <!-- <div class="contactitem">
+              <i class="fa-solid fa-globe"></i>
+              <h4>Instagram</h4>
+              <p>www.gtinky.com</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="messagesection">
+          <h3 class="title">Send Me An Email</h3>
+          <h4 class="sub-title">I'm Very Responsive in Message</h4>
+          <div class="messagecontainer">
+            <div class="row">
+              <input type="text" placeholder="Name" class="formitem name" />
+              <input type="text" placeholder="Email" class="formitem email" />
+            </div>
+            <textarea type="text" placeholder="Subject" class="formitem subject"></textarea>
+            <textarea type="text" placeholder="message" class="formitem message"></textarea>
+
+            <button class="btn">Send Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="style-switcher transformed" id="style-switcher">
+        <div class="style-switcher-toggler icon" id="style-switcher-toggler">
+        <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="daynightmode icon">
+          <i class="fas"></i>
+        </div>
+        <h4 class="themeclr">Theme color</h4>
+        <div class="colors">
+        <span class="color1" onclick="setActivestyle('color1')"></span>
+        <span class="color2" onclick="setActivestyle('color2')"></span>
+        <span class="color3" onclick="setActivestyle('color3')"></span>
+        <span class="color4" onclick="setActivestyle('color4')"></span>
+        <span class="color5" onclick="setActivestyle('color5')"></span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+  <script src="./css/themeswitcher.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD5DggwG2ARgj8a8vYUdgN_OHKwg5QLmLU",
+  authDomain: "portfolio-f8531.firebaseapp.com",
+  projectId: "portfolio-f8531",
+  storageBucket: "portfolio-f8531.appspot.com",
+  messagingSenderId: "926421448429",
+  appId: "1:926421448429:web:4b0e640db61c3dd6f77ee4",
+  measurementId: "G-QN33W9WJGT"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
 </html>
