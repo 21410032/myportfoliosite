@@ -21,6 +21,7 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins' sans-serif;
 }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -91,23 +92,21 @@ body{
     font-family:'Clicker script' , cursive;
 }
 .maincontent{
-    width: 75%;
+    
     display: flex;
     flex-direction: column;
     color:var(--text-black-700);
-    position: relative;
+    
 }
 .section{
-position: fixed;
+position: relative;
 left: 25VW;
 right: 0;
 top: 0;
 bottom: 0;
 overflow-x: hidden;
 overflow-y: auto;
-
 background:var(--bg-black-900);
-
 }
 
 .list{
@@ -212,14 +211,13 @@ margin-left:25px;
 }
 .name span{
     font-family:'Clicker script' , cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--skin-color);
     margin-left: 10px;
     font-weight: 700;
 }
 .profession span{
     font-family: cursive;
-    font-size: 50px;
     color: var(--skin-color);
     margin-left: 10px;
 }
@@ -270,9 +268,7 @@ margin-left:25px;
     height: 63px;
     position: relative;
     padding: .7rem;
-    left: 440px;
-   
-    
+    left: 360px; 
 }
 .homeimg::before{
     display: flex;
@@ -688,7 +684,7 @@ textarea{
         display: flex;
         /* flex-direction: column; */
         gap: 70px;
-        text-align: center;
+        
     }
     .homeimg img{
         width: 350px;
