@@ -92,11 +92,11 @@ body{
     font-family:'Clicker script' , cursive;
 }
 .maincontent{
-    
+    padding: 0px 70px;
     display: flex;
     flex-direction: column;
     color:var(--text-black-700);
-    
+    background-color: var(--bg-black-900);
 }
 .section{
 position: relative;
@@ -242,6 +242,9 @@ margin-left:25px;
     transition: all .3S ease;
     box-shadow: 2px 2px 5px var(--text-black-900);
 }
+.btn a{
+    color:var(--bg-black-900)
+}
 .btn:hover{
   transform: scale(1.05);
 }
@@ -268,7 +271,7 @@ margin-left:25px;
     height: 63px;
     position: relative;
     padding: .7rem;
-    left: 360px; 
+    left: 410px; 
 }
 .homeimg::before{
     display: flex;
@@ -350,8 +353,7 @@ font-family: cursive;
     display: flex;
     margin-bottom: 40px;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+    
     
 
 }
@@ -395,14 +397,13 @@ font-family: cursive;
     
     height: 5px;
     width: 100%;
-    background-color: var(--text-black-900);
+    background-color:var(--text-black-900);
     margin: 20px 0px;
 }
-.progress{
+.progresss{
     height: 5px;
-    background-color: var(--text-black-900);
-    /* background-color: var(--skin-color); */
     margin: 10px 0px;
+    background-color: var(--skin-color);
 }
 .skillperc{
     position: absolute;
@@ -428,6 +429,10 @@ font-family: cursive;
     margin-right: 20px;
     font-size: 25px;
 
+}
+.clg-photo{
+    height: auto;
+    width: 50%;
 }
 .experience .container{
     font-size: 25px;
@@ -537,12 +542,12 @@ font-family: cursive;
    color:var(--text-black-700);
    padding: 35px;
    max-width: 100%;
-   min-height: 100vh;
+   
    background-color: var(--bg-black-900);
 }
 .works{
     display: flex;
-    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: center;
 }
@@ -683,7 +688,7 @@ textarea{
     .homesection{
         display: flex;
         /* flex-direction: column; */
-        gap: 70px;
+        gap: 50px;
         
     }
     .homeimg img{
